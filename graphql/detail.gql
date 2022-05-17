@@ -1,0 +1,16 @@
+query MyQuery($id: Int!) {
+  campagins_by_pk(id: $id) {
+    id
+    image
+    name_project
+    project_leader
+    short_description
+    backer_count
+    current_amount
+    feature
+    goal_amount
+    contact
+    description
+    foto_profil
+  }
+}

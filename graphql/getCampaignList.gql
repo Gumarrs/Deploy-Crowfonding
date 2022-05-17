@@ -1,0 +1,14 @@
+query MyQuery {
+  campagins {
+    id
+    image
+    name_project
+    project_leader
+    short_description
+    backer_count
+    current_amount
+    feature
+    goal_amount
+    description
+  }
+}

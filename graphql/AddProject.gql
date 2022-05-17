@@ -1,0 +1,27 @@
+mutation MyMutation(
+  $name_project: String!
+  $goal_amount: Int!
+  $short_description: String!
+  $description: String!
+  $contact: Int!
+  $feature: String!
+) {
+  insert_campagins_one(
+    object: {
+      name_project: $name_project
+      goal_amount: $goal_amount
+      description: $description
+      short_description: $short_description
+      contact: $contact
+      feature: $feature
+    }
+  ) {
+    id
+    name_project
+    short_description
+    goal_amount
+    feature
+    description
+    contact
+  }
+}
